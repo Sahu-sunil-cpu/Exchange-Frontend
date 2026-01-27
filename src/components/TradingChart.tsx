@@ -1,5 +1,6 @@
 
 import { Kline } from '@/lib/klines';
+import { BASE_URL } from '@/lib/utils';
 import { WsManager } from '@/lib/WsManger';
 import { AreaSeries, createChart, ColorType, CandlestickSeries, CrosshairMode, LineStyle } from 'lightweight-charts';
 import React, { useEffect, useRef, useState } from 'react';
@@ -21,7 +22,7 @@ export function ChartComponent(props: {tf: string}) {
     const chartContainerRef = useRef<HTMLDivElement | null>(null);
 
   const getData = async () => {
-    const url = `http://localhost:3001/api/v1/history/TATA_INR/${props.tf}`;
+    const url = `${BASE_URL}/history/TATA_INR/${props.tf}`;
     const res = await fetch(url);
     const resp = await res.json();
      console.log(resp.message);
