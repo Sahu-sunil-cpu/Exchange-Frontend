@@ -24,7 +24,7 @@ export const TradingInterface: React.FC<TradingInterfaceProps> = ({ currentPrice
 
   return (
     <div className="h-full bg-slate-900 p-4">
-      <div className="text-white font-semibold mb-4 text-sm">Trade SUI/USDT</div>
+      <div className="text-white font-semibold mb-4 text-sm">Trade</div>
       
       {/* Order Type Selector */}
       <div className="flex space-x-2 mb-4">
@@ -90,7 +90,7 @@ export const TradingInterface: React.FC<TradingInterfaceProps> = ({ currentPrice
               userId: "1"
             }
               )}>
-            Buy SUI
+            Buy
           </Button>
         </TabsContent>
         
@@ -132,7 +132,7 @@ export const TradingInterface: React.FC<TradingInterfaceProps> = ({ currentPrice
               userId: "1"
             }
               )}>
-            Sell SUI
+            Sell
           </Button>
         </TabsContent>
       </Tabs>

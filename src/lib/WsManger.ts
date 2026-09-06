@@ -1,6 +1,6 @@
 
 //write types for incoming and outgoing message
-export const BASE_URL = "ws://13.60.185.201:8081"
+export const BASE_URL = "ws://localhost:8081"
 
 export class WsManager {
     private ws: WebSocket;
